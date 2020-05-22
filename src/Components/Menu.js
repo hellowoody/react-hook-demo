@@ -18,6 +18,16 @@ export default function(){
             url:'#count'
         },
         {
+            id:'3',
+            name:'自适应屏幕',
+            url:'#resize'
+        },
+        {
+            id:'4',
+            name:'数据请求',
+            url:'#http'
+        },
+        {
             id:'99',
             name:'Logout',
             url:'#logout'

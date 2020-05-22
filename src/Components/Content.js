@@ -3,6 +3,8 @@ import React from 'react'
 import {DataContext} from '../storeReducer'
 import Login from './Login'
 import Count from './Count'
+import Resize from './Resize'
+import HttpData from './HttpData'
 export default function(){
     const {selectedMenu} = React.useContext(DataContext)
     let Page = ()=>{
@@ -11,6 +13,12 @@ export default function(){
         }
         if (selectedMenu.id === '2'){
             return <Count/>
+        }
+        if (selectedMenu.id === '3'){
+            return <Resize/>
+        }
+        if (selectedMenu.id === '4'){
+            return <HttpData/>
         }
         return <div>welcome</div>
     }
